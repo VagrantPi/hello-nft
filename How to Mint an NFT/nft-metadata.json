@@ -1,0 +1,12 @@
+{
+  "attributes" : [ {
+    "trait_type" : "Breed",
+    "value" : "MeMe"
+  }, {
+    "trait_type" : "rank",
+    "value" : "no. 1"
+  } ],
+  "description" : "the popular meme in 2021/08",
+  "image" : "https://gateway.pinata.cloud/ipfs/QmYqfs79uSDJzdMebdA7z5BhMzggm4HzZHMGbxkhRZMEBW",
+  "name" : "POPCAT data"
+}
