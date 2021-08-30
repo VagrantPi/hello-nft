@@ -38,7 +38,7 @@ describe("tasks", () => {
       await run("mint-nft", { tokenUri: "https://example.com/record/4" });
 
       await expect(process.stdout.write).to.have.been.calledWith(
-        "TX hash: 0xd1e60d34f92b18796080a7fcbcd8c2b2c009687daec12f8bb325ded6a81f5eed"
+        "TX hash: 0xf9088be65ad2ef73aafda6dc24a2925fc2cc0c5c8372e7e47db0778e2984785a"
       );
     });
   });

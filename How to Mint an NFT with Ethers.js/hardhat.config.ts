@@ -7,10 +7,10 @@ import { env } from "./lib/env";
 // You need to export an object to set up your config
 // Go to https://hardhat.org/config/ to learn more
 
-const argv = JSON.parse(env("npm_config_argv"));
-if (argv.original !== ["hardhat", "test"]) {
+// const argv = JSON.parse(env("npm_config_argv"));
+// if (argv.original !== ["hardhat", "test"]) {
   require('dotenv').config();
-}
+// }
 
 
 import("./tasks/nft");

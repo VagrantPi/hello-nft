@@ -16,10 +16,12 @@ task("deploy-contract", "Deploy NFT contract").setAction(async (_, hre) => {
 
 task("mint-nft", "Mint an NFT")
   .addParam("tokenUri", "Your ERC721 Token URI", undefined, types.string)
-  .setAction(async (tokenUri, hre) => {
+  .setAction(async (params, hre) => {
+    console.log('tokenUri', params.tokenUri);
+    
     return getContract("MyNFT", hre)
       .then((contract: Contract) => {
-        return contract.mintNFT(env("ETH_PUBLIC_KEY"), tokenUri, {
+        return contract.mintNFT(env("ETH_PUBLIC_KEY"), params.tokenUri, {
           gasLimit: 500_000,
         });
       })
